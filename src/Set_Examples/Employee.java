@@ -1,6 +1,12 @@
 package Set_Examples;
 
-public class Emploee {
+public class Employee implements Comparable<Employee> {
+	
+	public int compareTo(Employee other) {
+		if(this.id == other.id) return 0;
+		else if(this.id>other.id) return 1;
+		return -1;
+	}
 
 	private int id;
 	private String name;
@@ -16,7 +22,7 @@ public class Emploee {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Emploee(int id, String name) {
+	public Employee(int id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -42,7 +48,7 @@ public class Emploee {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Emploee other = (Emploee) obj;
+		Employee other = (Employee) obj;
 		if (id != other.id)
 			return false;
 		if (name == null) {
@@ -52,4 +58,5 @@ public class Emploee {
 			return false;
 		return true;
 	}
+	
 }

@@ -9,13 +9,13 @@ public class EmployeesSet {
 
 	public static void main(String[] args) {
 		
-		Set<Emploee> emploees = new HashSet<>();
-		emploees.add(new Emploee(123, " Mark"));
-		emploees.add(new Emploee(555,"John"));
-		emploees.add(new Emploee(123, " Mark"));
+		Set<Employee> emploees = new HashSet<>();
+		emploees.add(new Employee(123, " Mark"));
+		emploees.add(new Employee(555,"John"));
+		emploees.add(new Employee(123, " Mark"));
 		
 		
-		System.out.println(emploees.toString());
+		System.out.println(emploees.toString());//	[id: 555; name: John, id: 123; name:  Mark]
 
 	}
 
