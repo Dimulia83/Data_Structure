@@ -24,14 +24,12 @@ public class ArrayListExample {
 		int[][] nums = new int[2][3];
 		List<List<Integer>> list;//	nested List such multidimensional array
 		
+		// will make array bigger
 		int[] numbers = {1,4,7,8,5,2};
 		System.out.println(Arrays.toString(numbers));
 		numbers = Arrays.copyOf(numbers, numbers.length + 5);
 		System.out.println(Arrays.toString(numbers));
 		
-		
-		
-
 	}
 
 }
